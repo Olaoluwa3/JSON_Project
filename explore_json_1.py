@@ -1,7 +1,5 @@
-from ast import Eq
+
 import json
-from pyexpat import features
-from re import L
 
 infile = open('eq_data_1_day_m1.json', 'r')
 outfile = open('readable_eq_data.json', 'w')
@@ -38,4 +36,4 @@ data = [Scattergeo(lon=lons, lat=lats)]
 my_layout = Layout(title='Global Earthquakes')
 fig = {'data':data, 'layout':my_layout}
 
-offline.plot(fig, filename='Global_earthquakes.html')
+offline.plot(fig, filename='Global_earthquakes.pdf')
