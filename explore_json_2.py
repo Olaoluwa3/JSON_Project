@@ -1,7 +1,6 @@
-from ast import Eq
+
 import json
-from pyexpat import features
-from re import L
+
 
 infile = open('eq_data_30_day_m1.json', 'r')
 outfile = open('readable_eq_data2.json', 'w')
